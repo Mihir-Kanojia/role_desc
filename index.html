@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roles Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Roles Information</h2>
+
+  <div class="container">
+    <div class="block">
+      <select id="sourceLang">
+        <option value="en">SailPoint Role attributes</option>
+        <option value="es">Text1</option>
+        <option value="fr">Text2</option>
+      </select>
+      <textarea id="sourceText" rows="6" placeholder="Type here..."></textarea>
+    </div>
+
+    <div class="arrow" onclick="swapLanguages()">⇄</div>
+
+    <div class="block">
+      <select id="targetLang">
+        <option value="hi">Role Description</option>
+        <option value="de">Text1</option>
+        <option value="ja">Text2</option>
+      </select>
+      <textarea id="translatedText" rows="6" placeholder="Description..." readonly></textarea>
+    </div>
+  </div>
+
+  <button onclick="mockTranslate()">Go</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
