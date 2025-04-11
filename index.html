@@ -13,10 +13,10 @@
     <div class="block">
       <select id="sourceLang">
         <option value="en">SailPoint Role attributes</option>
-        <option value="es">Text1</option>
-        <option value="fr">Text2</option>
+        <option value="es"></option>
+        <option value="fr"></option>
       </select>
-      <textarea id="sourceText" rows="6" placeholder="Type here..."></textarea>
+      <textarea id="inputText" rows="6" placeholder="Type here..."></textarea>
     </div>
 
     <div class="arrow" ">⇄</div>
@@ -24,15 +24,15 @@
     <div class="block">
       <select id="targetLang">
         <option value="hi">Role Description</option>
-        <option value="de">Text1</option>
-        <option value="ja">Text2</option>
+        <option value="de"></option>
+        <option value="ja"></option>
       </select>
-      <textarea id="translatedText" rows="6" placeholder="Description..." readonly></textarea>
+      <textarea id="outputText" rows="6" placeholder="Description..." readonly></textarea>
     </div>
   </div>
 
-  <button onclick="mockTranslate()">Go</button>
-
-  <script src="script.js"></script>
+  <button onclick="callAPI()">Go</button>
+  
+    <script src="script.js"></script>
 </body>
 </html>
